@@ -2,7 +2,8 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: Arial;
+    text-decoration: none;
+    list-style-type: none;
 }
 
 body {
@@ -12,7 +13,7 @@ body {
 /* HEADER */
 
 .container {
-    width: 1200px;
+    width: 1400px;
     margin: 0 auto;
 }
 
@@ -140,7 +141,8 @@ body {
     border-radius: 10px;
 
 }
-footer{
+
+footer {
     width: 1200px;
     margin: 0 auto;
 }
@@ -248,7 +250,56 @@ footer{
     border-radius: 10px;
 
 }
+.variant-img10 {
+    width:  60px;
+    height: 55px;
+    border-radius: 8px;
+    flex-shrink: 0;
+    background-image: url(./img/Без\ названия3333.jpg);
+    background-size: 60px 60px;
+    background-position: center;
+    background-repeat: no-repeat;
+    border-radius: 10px;
 
+}
+.variant-img11 {
+    width: 60px;
+    height: 60px;
+    border-radius: 8px;
+    flex-shrink: 0;
+    background-image: url(./img/Без\ названия\ \(7\).jpg);
+    background-size: 60px 60px;
+    background-position: center;
+    background-repeat: no-repeat;
+    border-radius: 10px;
+
+    
+}
+.variant-img12 {
+    width: 60px;
+    height: 60px;
+    border-radius: 8px;
+    flex-shrink: 0;
+    background-image: url(./img/Без\ названия\ \(7\).jpg);
+    background-size: 60px 60px;
+    background-position: center;
+    background-repeat: no-repeat;
+    border-radius: 10px;
+
+}
+
+.variant-img13 {
+    width: 60px;
+    height: 60px;
+    border-radius: 8px;
+    flex-shrink: 0;
+    background-image: url(./img/Без\ названия\ \(7\).jpg);
+    background-size: 60px 60px;
+    background-position: center;
+    background-repeat: no-repeat;
+    border-radius: 10px;
+
+}
 /* Hover karta animatsiyasi */
 .food-card:hover {
     transform: translateY(-5px) scale(1.02);
@@ -283,22 +334,25 @@ footer{
 /* ABOUT */
 
 .about {
-    padding: 60px;
+    padding: 60p 100px 0px 0px ;
     text-align: center;
-    max-width: 800px;
-    margin: auto;
+
+  
 }
+.about p{
+margin: 30px 500px ;
+}
+
 
 /* CONTACT */
 
-.contact {
+.contact2{
     padding: 60px;
     text-align: center;
 }
 
 .contact a {
     color: #ff4d4d;
-    text-decoration: none;
     margin: 0 5px;
 }
 
@@ -313,7 +367,8 @@ footer {
     color: white;
     text-align: center;
     padding: 20px;
+    margin: 0 auto;
+    width: 1440px;
+    
 }
-
-
 
