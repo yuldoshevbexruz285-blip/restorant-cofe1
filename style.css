@@ -503,32 +503,18 @@ footer {
     width: 1440px;
 
 }
-/* 
-@media (max-width:768px) {
-    .container {
-        width: 100%;
-        margin: 0;
-        overflow-x: hidden;
-    }
 
-    .header {
-        width: 768px;
-    }
 
-    .logo,
-    .nav {
-        font-size: 13px;
-    }
-} */
- /* --- TELEFON UCHUN HAMMA NARSANI KICHRAYTIRISH --- */
 
 @media (max-width: 768px) {
+
     /* 1. Saytni qolipga solish (Oq joylarni yo'qotish) */
     * {
         box-sizing: border-box !important;
     }
 
-    html, body {
+    html,
+    body {
         width: 100% !important;
         overflow-x: hidden !important;
         margin: 0 !important;
@@ -536,7 +522,9 @@ footer {
     }
 
     /* 2. Header va Footer (Katta piksellarni o'chiramiz) */
-    .header, footer, .container {
+    .header,
+    footer,
+    .container {
         width: 100% !important;
         max-width: 100% !important;
         padding: 10px !important;
@@ -547,46 +535,61 @@ footer {
         gap: 8px !important;
     }
 
-    .nav a, .logo {
+    .nav a,
+    .logo {
         font-size: 11px !important;
     }
 
     /* 3. Hero (Banner) - Kichikroq va rasm sig'adigan bo'lsin */
     .hero {
         width: 100% !important;
-        height: 300px !important; /* Banner balandligini ancha kichraytirdik */
-   
-        background-size: cover !important;
-        margin: 30px 0px 0px 0px ;
+        height: 300px !important;
+        /* Banner balandligini ancha kichraytirdik */
+
+        background-size: 708px !important;
+        margin: 30px 0px 0px 0px;
     }
 
-    .hero h2 { font-size: 18px !important; }
-    .hero p { font-size: 12px !important; }
-    .hero button { padding: 5px 10px !important; font-size: 12px !important; }
+    .hero h2 {
+        font-size: 18px !important;
+    }
+
+    .hero p {
+        font-size: 12px !important;
+    }
+
+    .hero button {
+        padding: 5px 10px !important;
+        font-size: 12px !important;
+    }
 
     /* 4. Menu Grid - 3 ta ustun va kichik masofa */
-    .menu, .menu2 {
-        margin: 50px 5px !important; 
-        
+    .menu,
+    .menu2 {
+        margin: 50px 5px !important;
+
     }
 
     .menu-grid {
         display: grid !important;
-        grid-template-columns: repeat(3, 1fr) !important; /* 3 ta ustun */
-        gap: 5px !important;
+        grid-template-columns: repeat(3, 1fr) !important;
+        /* 3 ta ustun */
+        gap: 2px !important;
         margin-top: 10px !important;
+
     }
 
     /* 5. Food Card - Ichidagi hamma narsani kichraytiramiz */
     .food-card {
-        padding: 10px !important;
-
+        margin: 0px 20px 0px 15px;
+        width: 200px;
 
     }
 
     .food-card img {
-        width: 200px !important;
-        height: 100px !important; /* Rasmlar balandligi kichiklashdi */
+        width: 150px !important;
+        height: 80px !important;
+        /* Rasmlar balandligi kichiklashdi */
         object-fit: cover !important;
         background-position: center;
     }
@@ -594,7 +597,7 @@ footer {
     .food-card h3 {
         display: block;
         text-align: center;
-        font-size: 9px !important;
+        font-size: 5px !important;
         margin: 2px 0 !important;
     }
 
@@ -605,13 +608,14 @@ footer {
     }
 
     .about p {
-        margin: 0 !important; /* 500px li joyni o'chirdik */
-        width: 100% !important;
+        margin: 0px 160px !important;
+        /* 500px li joyni o'chirdik */
+        width: 400px !important;
         font-size: 11px !important;
         text-align: center;
     }
 
-   
+
     .contact2 {
         padding: 15px !important;
         font-size: 11px !important;
