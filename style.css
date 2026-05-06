@@ -47,16 +47,17 @@ body {
 
 .hero {
 
-    height: 600px;
+    height: 800px;
+
     display: flex;
-    margin-top: 50px;
+    margin: 50px 0px 0px 30px;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     text-align: center;
 
-    background-image: url(./img/depositphotos_312096012-stock-photo-render-wooden-style-cafe-restaurant.jpg);
-    background-size: 1200px;
+    background-image: url(./img/restouranr\ logo.jpg);
+    background-size: 1400px;
     background-position: center;
     background-repeat: no-repeat;
 }
@@ -502,79 +503,117 @@ footer {
     width: 1440px;
 
 }
-    
-@media (max-width: 768px) {
-
-    /* 1. Umumiy surilishni to'xtatish */
-    body,
-    html {
-        overflow-x: hidden;
-        /* Sayt o'ngga qarab oqib ketmaydi */
-        width: 100%;
-    }
-
+/* 
+@media (max-width:768px) {
     .container {
-        width: 95%;
-        /* Chetda ozgina bo'shliq qoladi */
-        max-width: none;
-        margin: 0 auto;
-    }
-
-    /* 2. Hero (Asosiy rasm) qismini to'g'rilash */
-    .hero {
         width: 100%;
-        padding: 40px 0;
-        background-position: center;
+        margin: 0;
+        overflow-x: hidden;
     }
 
-    .hero-content {
-        width: 90%;
-        margin: 0 auto;
-        text-align: center;
+    .header {
+        width: 768px;
     }
 
-    /* 3. Gridlarni (Menu va Other Dishes) bitta ustunga keltirish */
-    .menu-grid {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        /* Kartochkalarni o'rtaga qo'yadi */
-        gap: 25px;
-        width: 100%;
+    .logo,
+    .nav {
+        font-size: 13px;
+    }
+} */
+ /* --- TELEFON UCHUN HAMMA NARSANI KICHRAYTIRISH --- */
+
+@media (max-width: 768px) {
+    /* 1. Saytni qolipga solish (Oq joylarni yo'qotish) */
+    * {
+        box-sizing: border-box !important;
     }
 
-    /* 4. Kartochkalarni o'rtaga tekislash va surilishni yo'qotish */
-    .food-card {
+    html, body {
         width: 100% !important;
-        max-width: 340px;
-        /* Telefonda juda semirib ketmaydi */
-        margin: 0 auto !important;
-        /* Qoq markazda turadi */
+        overflow-x: hidden !important;
+        margin: 0 !important;
+        padding: 0 !important;
+    }
+
+    /* 2. Header va Footer (Katta piksellarni o'chiramiz) */
+    .header, footer, .container {
+        width: 100% !important;
+        max-width: 100% !important;
+        padding: 10px !important;
+        margin: 0 !important;
+    }
+
+    .nav {
+        gap: 8px !important;
+    }
+
+    .nav a, .logo {
+        font-size: 11px !important;
+    }
+
+    /* 3. Hero (Banner) - Kichikroq va rasm sig'adigan bo'lsin */
+    .hero {
+        width: 100% !important;
+        height: 300px !important; /* Banner balandligini ancha kichraytirdik */
+   
+        background-size: cover !important;
+        margin: 30px 0px 0px 0px ;
+    }
+
+    .hero h2 { font-size: 18px !important; }
+    .hero p { font-size: 12px !important; }
+    .hero button { padding: 5px 10px !important; font-size: 12px !important; }
+
+    /* 4. Menu Grid - 3 ta ustun va kichik masofa */
+    .menu, .menu2 {
+        margin: 50px 5px !important; 
+        
+    }
+
+    .menu-grid {
+        display: grid !important;
+        grid-template-columns: repeat(3, 1fr) !important; /* 3 ta ustun */
+        gap: 5px !important;
+        margin-top: 10px !important;
+    }
+
+    /* 5. Food Card - Ichidagi hamma narsani kichraytiramiz */
+    .food-card {
+        padding: 10px !important;
+
+
     }
 
     .food-card img {
-        width: 100%;
-        height: 200px;
-        object-fit: cover;
+        width: 200px !important;
+        height: 100px !important; /* Rasmlar balandligi kichiklashdi */
+        object-fit: cover !important;
+        background-position: center;
     }
 
-    /* 5. Navigatsiya menyusini (Foodies) to'g'rilash */
-    header .container {
-        flex-direction: column;
+    .food-card h3 {
+        display: block;
         text-align: center;
-        gap: 10px;
+        font-size: 9px !important;
+        margin: 2px 0 !important;
     }
 
-    header nav ul {
-        display: flex;
-        justify-content: center;
-        padding: 0;
-        gap: 15px;
+
+
+    .about {
+        padding: 20px 10px !important;
     }
 
-    /* 6. "Other Dishes" sarlavhasini o'rtaga olish */
-    #more-menu h2 {
+    .about p {
+        margin: 0 !important; /* 500px li joyni o'chirdik */
+        width: 100% !important;
+        font-size: 11px !important;
         text-align: center;
-        margin-bottom: 20px;
+    }
+
+   
+    .contact2 {
+        padding: 15px !important;
+        font-size: 11px !important;
     }
 }
