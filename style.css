@@ -250,8 +250,9 @@ footer {
     border-radius: 10px;
 
 }
+
 .variant-img10 {
-    width:  60px;
+    width: 60px;
     height: 55px;
     border-radius: 8px;
     flex-shrink: 0;
@@ -262,25 +263,27 @@ footer {
     border-radius: 10px;
 
 }
+
 .variant-img11 {
     width: 60px;
-    height: 60px;
+    height: 50px;
     border-radius: 8px;
     flex-shrink: 0;
-    background-image: url(./img/Без\ названия\ \(7\).jpg);
+    background-image: url(./img/22.jpg);
     background-size: 60px 60px;
     background-position: center;
     background-repeat: no-repeat;
     border-radius: 10px;
 
-    
+
 }
+
 .variant-img12 {
     width: 60px;
     height: 60px;
     border-radius: 8px;
     flex-shrink: 0;
-    background-image: url(./img/Без\ названия\ \(7\).jpg);
+    background-image: url(./img/444.jpg);
     background-size: 60px 60px;
     background-position: center;
     background-repeat: no-repeat;
@@ -293,13 +296,134 @@ footer {
     height: 60px;
     border-radius: 8px;
     flex-shrink: 0;
-    background-image: url(./img/Без\ названия\ \(7\).jpg);
+    background-image: url(./img/55.jpg);
     background-size: 60px 60px;
     background-position: center;
     background-repeat: no-repeat;
     border-radius: 10px;
 
 }
+
+.variant-img14 {
+    width: 60px;
+    height: 60px;
+    border-radius: 8px;
+    flex-shrink: 0;
+    background-image: url(./img/salad2.jpg);
+    background-size: 60px 60px;
+    background-position: center;
+    background-repeat: no-repeat;
+    border-radius: 10px;
+}
+
+.variant-img15 {
+    width: 60px;
+    height: 60px;
+    border-radius: 8px;
+    flex-shrink: 0;
+    background-image: url(./img/salad3.jpg);
+    background-size: 60px 60px;
+    background-position: center;
+    background-repeat: no-repeat;
+    border-radius: 10px;
+}
+
+.variant-img16 {
+    width: 60px;
+    height: 60px;
+    border-radius: 8px;
+    flex-shrink: 0;
+    background-image: url(./img/salad4.jpg);
+    background-size: 60px 60px;
+    background-position: center;
+    background-repeat: no-repeat;
+    border-radius: 10px;
+}
+
+.variant-img17 {
+    width: 60px;
+    height: 60px;
+    border-radius: 8px;
+    flex-shrink: 0;
+    background-image: url(./img/soup2.jpg);
+    background-size: 60px 60px;
+    background-position: center;
+    background-repeat: no-repeat;
+    border-radius: 10px;
+}
+
+.variant-img18 {
+    width: 60px;
+    height: 60px;
+    border-radius: 8px;
+    flex-shrink: 0;
+    background-image: url(./img/soup3.jpg);
+    background-size: 60px 60px;
+    background-position: center;
+    background-repeat: no-repeat;
+    border-radius: 10px;
+}
+
+.variant-img19 {
+    width: 60px;
+    height: 60px;
+    border-radius: 8px;
+    flex-shrink: 0;
+    background-image: url(./img/soup4.jpg);
+    background-size: 60px 60px;
+    background-position: center;
+    background-repeat: no-repeat;
+    border-radius: 10px;
+}
+
+.variant-img20 {
+    width: 60px;
+    height: 60px;
+    border-radius: 8px;
+    flex-shrink: 0;
+    background-image: url(./img/desserts2.jpg);
+    background-size: 60px 60px;
+    background-position: center;
+    background-repeat: no-repeat;
+    border-radius: 10px;
+}
+
+.variant-img21 {
+    width: 60px;
+    height: 60px;
+    border-radius: 8px;
+    flex-shrink: 0;
+    background-image: url(./img/desserts3.jpg);
+    background-size: 60px 60px;
+    background-position: center;
+    background-repeat: no-repeat;
+    border-radius: 10px;
+}
+
+.variant-img22 {
+    width: 60px;
+    height: 60px;
+    border-radius: 8px;
+    flex-shrink: 0;
+    background-image: url(./img/desserts4.jpg);
+    background-size: 60px 60px;
+    background-position: center;
+    background-repeat: no-repeat;
+    border-radius: 10px;
+}
+
+.variant-img23 {
+    width: 60px;
+    height: 60px;
+    border-radius: 8px;
+    flex-shrink: 0;
+    background-image: url(./img/desserts5.jpg);
+    background-size: 60px 60px;
+    background-position: center;
+    background-repeat: no-repeat;
+    border-radius: 10px;
+}
+
 /* Hover karta animatsiyasi */
 .food-card:hover {
     transform: translateY(-5px) scale(1.02);
@@ -310,11 +434,11 @@ footer {
     width: 300px;
     height: 200px;
     border-radius: 10px;
+    background-image: url(./img);
 }
 
 #more-menu .food-img {
-    height: 120px;
-    /* kichik taomlar biroz kichik */
+    height: 150px
 }
 
 #more-menu .food-card:hover {
@@ -334,19 +458,20 @@ footer {
 /* ABOUT */
 
 .about {
-    padding: 60p 100px 0px 0px ;
+    padding: 60p 100px 0px 0px;
     text-align: center;
 
-  
+
 }
-.about p{
-margin: 30px 500px ;
+
+.about p {
+    margin: 30px 500px;
 }
 
 
 /* CONTACT */
 
-.contact2{
+.contact2 {
     padding: 60px;
     text-align: center;
 }
@@ -369,6 +494,5 @@ footer {
     padding: 20px;
     margin: 0 auto;
     width: 1440px;
-    
-}
 
+}
