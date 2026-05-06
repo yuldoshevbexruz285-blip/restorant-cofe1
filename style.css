@@ -95,8 +95,9 @@ body {
     margin: 60px;
     text-align: center;
 }
+
 .menu2 {
-    margin: 60px 10px 70px 10px ;
+    margin: 60px 10px 70px 10px;
     text-align: center;
 }
 
@@ -500,4 +501,80 @@ footer {
     margin: 0 auto;
     width: 1440px;
 
+}
+    
+@media (max-width: 768px) {
+
+    /* 1. Umumiy surilishni to'xtatish */
+    body,
+    html {
+        overflow-x: hidden;
+        /* Sayt o'ngga qarab oqib ketmaydi */
+        width: 100%;
+    }
+
+    .container {
+        width: 95%;
+        /* Chetda ozgina bo'shliq qoladi */
+        max-width: none;
+        margin: 0 auto;
+    }
+
+    /* 2. Hero (Asosiy rasm) qismini to'g'rilash */
+    .hero {
+        width: 100%;
+        padding: 40px 0;
+        background-position: center;
+    }
+
+    .hero-content {
+        width: 90%;
+        margin: 0 auto;
+        text-align: center;
+    }
+
+    /* 3. Gridlarni (Menu va Other Dishes) bitta ustunga keltirish */
+    .menu-grid {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        /* Kartochkalarni o'rtaga qo'yadi */
+        gap: 25px;
+        width: 100%;
+    }
+
+    /* 4. Kartochkalarni o'rtaga tekislash va surilishni yo'qotish */
+    .food-card {
+        width: 100% !important;
+        max-width: 340px;
+        /* Telefonda juda semirib ketmaydi */
+        margin: 0 auto !important;
+        /* Qoq markazda turadi */
+    }
+
+    .food-card img {
+        width: 100%;
+        height: 200px;
+        object-fit: cover;
+    }
+
+    /* 5. Navigatsiya menyusini (Foodies) to'g'rilash */
+    header .container {
+        flex-direction: column;
+        text-align: center;
+        gap: 10px;
+    }
+
+    header nav ul {
+        display: flex;
+        justify-content: center;
+        padding: 0;
+        gap: 15px;
+    }
+
+    /* 6. "Other Dishes" sarlavhasini o'rtaga olish */
+    #more-menu h2 {
+        text-align: center;
+        margin-bottom: 20px;
+    }
 }
