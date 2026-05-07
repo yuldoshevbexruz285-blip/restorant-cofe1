@@ -508,7 +508,7 @@ footer {
 
 @media (max-width: 768px) {
 
-    /* 1. Saytni qolipga solish (Oq joylarni yo'qotish) */
+    /* 1. Saytni qolipga solish */
     * {
         box-sizing: border-box !important;
     }
@@ -521,7 +521,7 @@ footer {
         padding: 0 !important;
     }
 
-    /* 2. Header va Footer (Katta piksellarni o'chiramiz) */
+    /* 2. Header va Footer */
     .header,
     footer,
     .container {
@@ -531,132 +531,113 @@ footer {
         margin: 0 !important;
     }
 
-    .nav {
-        gap: 8px !important;
-    }
-
-    .nav a,
-    .logo {
-        font-size: 11px !important;
-    }
-
-    /* 3. Hero (Banner) - Kichikroq va rasm sig'adigan bo'lsin */
+    /* 3. Hero (Banner) */
     .hero {
         width: 100% !important;
         height: 300px !important;
-        /* Banner balandligini ancha kichraytirdik */
-
-        background-size:678px !important;
-        margin: 30px 0px 0px 0px;
+        background-size: cover !important;
+        /* Rasm to'liq yopishi uchun */
+        background-position: center !important;
+        margin: 30px 0 0 0 !important;
     }
 
     .hero h2 {
-        font-size: 18px !important;
+        font-size: 25px;
+    }
+
+    .header h1 {
+        font-size: 20px;
+    }
+
+    .nav {
+        font-size: 12px;
     }
 
     .hero p {
-        font-size: 12px !important;
+        font-size: 20px;
     }
 
     .hero button {
-        padding: 5px 10px !important;
-        font-size: 12px !important;
+        width: 100px;
+        font-size: 10px;
+        border-radius: 5px;
+        height: 40px;
+        background-color: #ff4d4d;
     }
 
-    /* 4. Menu Grid - 3 ta ustun va kichik masofa */
     .menu,
     .menu2 {
-        margin: 40px 80px !important;
-        text-align: center;
-        justify-content: center;
+        margin: 20px 0 !important;
 
-    }
-    .menu h2,
-    .menu2 h2{
-        font-size: 20px;
+        width: 100% !important;
+        text-align: center;
+        display: flex !important;
+        flex-direction: column !important;
+        align-items: center !important;
+        /* Sarlavha va gridni markazga taqaydi */
     }
 
     .menu-grid {
         display: grid !important;
         grid-template-columns: repeat(3, 1fr) !important;
-        /* 3 ta ustun */
-        gap: 2px !important;
-        margin-top: 10px !important;
-
+        width: 100% !important;
+        max-width: 100% !important;
+        gap: 5px !important;
+        margin: 10px 0 0 0 !important;
     }
 
-    /* 5. Food Card - Ichidagi hamma narsani kichraytiramiz */
+    /* 5. Food Card - O'lchamlarni qotirish */
     .food-card {
-        margin: 0px 20px 0px 15px;
-        width: 150px;
-
+        margin: 0 !important;
+        /* Surilib ketmasligi uchun 0 qilingdi */
+        width: 100% !important;
+        /* Grid ichida o'zi moslashadi */
+        height: 150px !important;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 5px;
+        box-sizing: border-box;
     }
 
     .food-card img {
-        width: 120px !important;
-        height: 80px !important;
-        /* Rasmlar balandligi kichiklashdi */
+        width: 90% !important;
+        height: 60px !important;
         object-fit: cover !important;
-        background-position: center;
     }
 
     .food-card h3 {
-        display: block;
+        display: block !important;
+        font-size: 10px !important;
+        /* O'ta kichik 5px ni 10px qildik */
+        margin: 5px 0 !important;
         text-align: center;
-        font-size: 5px !important;
-        margin: 2px 0 !important;
     }
 
     .food-card p {
-        display: block;
+        display: block !important;
         font-size: 8px !important;
         line-height: 1.1 !important;
         text-align: center;
-        margin: 2px 0px;
-    }
-.variant-img1,
-.variant-img2,
-.variant-img3,
-.variant-img4,
-.variant-img5,
-.variant-img6,
-.variant-img7,
-.variant-img8,
-.variant-img9,
-.variant-img10,
-.variant-img11,
-.variant-img12,
-.variant-img13,
-.variant-img14,
-.variant-img15,
-.variant-img16,
-.variant-img17,
-.variant-img18,
-.variant-img19,
-.variant-img20,
-.variant-img21,
-.variant-img22,
-.variant-img23{
-    width: 25px ;
-    height: 25px;
-    background-size: 30px;
-    border-radius: 2px;
-}
-    .about {
-        padding: 20px 10px !important;
+        margin: 0 !important;
     }
 
+    /* 6. About Us - Oq joylarni yo'qotish */
     .about p {
-        margin: 0px 160px !important;
-        /* 500px li joyni o'chirdik */
-        width: 400px !important;
+        margin: 10px auto !important;
+        /* 160px margin olib tashlandi */
+        width: 90% !important;
+        /* 400px o'rniga foizda berildi */
+        max-width: 100% !important;
         font-size: 11px !important;
-        text-align: center;
+        text-align: center !important;
     }
 
-
-    .contact2 {
-        padding: 15px !important;
-        font-size: 11px !important;
+    /* Variantlar uchun */
+    [class^="variant-img"] {
+        width: 25px !important;
+        height: 25px !important;
+        border-radius: 2px;
+        background-size: cover;
     }
 }
