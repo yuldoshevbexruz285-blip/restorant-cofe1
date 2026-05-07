@@ -546,7 +546,7 @@ footer {
         height: 300px !important;
         /* Banner balandligini ancha kichraytirdik */
 
-        background-size: 708px !important;
+        background-size:678px !important;
         margin: 30px 0px 0px 0px;
     }
 
@@ -566,8 +566,14 @@ footer {
     /* 4. Menu Grid - 3 ta ustun va kichik masofa */
     .menu,
     .menu2 {
-        margin: 50px 5px !important;
+        margin: 40px 80px !important;
+        text-align: center;
+        justify-content: center;
 
+    }
+    .menu h2,
+    .menu2 h2{
+        font-size: 20px;
     }
 
     .menu-grid {
@@ -582,12 +588,12 @@ footer {
     /* 5. Food Card - Ichidagi hamma narsani kichraytiramiz */
     .food-card {
         margin: 0px 20px 0px 15px;
-        width: 200px;
+        width: 150px;
 
     }
 
     .food-card img {
-        width: 150px !important;
+        width: 120px !important;
         height: 80px !important;
         /* Rasmlar balandligi kichiklashdi */
         object-fit: cover !important;
@@ -601,8 +607,41 @@ footer {
         margin: 2px 0 !important;
     }
 
-
-
+    .food-card p {
+        display: block;
+        font-size: 8px !important;
+        line-height: 1.1 !important;
+        text-align: center;
+        margin: 2px 0px;
+    }
+.variant-img1,
+.variant-img2,
+.variant-img3,
+.variant-img4,
+.variant-img5,
+.variant-img6,
+.variant-img7,
+.variant-img8,
+.variant-img9,
+.variant-img10,
+.variant-img11,
+.variant-img12,
+.variant-img13,
+.variant-img14,
+.variant-img15,
+.variant-img16,
+.variant-img17,
+.variant-img18,
+.variant-img19,
+.variant-img20,
+.variant-img21,
+.variant-img22,
+.variant-img23{
+    width: 25px ;
+    height: 25px;
+    background-size: 30px;
+    border-radius: 2px;
+}
     .about {
         padding: 20px 10px !important;
     }
