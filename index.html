@@ -9,34 +9,36 @@
 </head>
 
 <body>
-    <div class="container">
-        <header class="header">
+
+    <header class="header">
+        <div class="header1">
             <h1 class="logo">Foodies</h1>
 
             <nav>
                 <ul class="nav">
                     <li><a href="#home">Home</a></li>
                     <li><a href="#menu">Menu</a></li>
+                    <li><a href="#All menu"> All menu</a></li>
                     <li><a href="#about">About</a></li>
                     <li><a href="#contact">Contact</a></li>
                 </ul>
             </nav>
-
-        </header>
-
-
-        <section id="home" class="hero">
-
-            <h2>Welcome To Our Restaurant</h2>
-            <p>Best food in your city</p>
-            <button>Order Now</button>
+        </div>
+    </header>
 
 
-        </section>
+    <section id="home" class="hero">
+
+        <h2>Welcome To Our Restaurant</h2>
+        <p>Best food in your city</p>
+        <button class="order-btn">Order Now</button>
 
 
-        <section id="menu" class="menu">
+    </section>
 
+
+    <section id="menu" class="menu">
+        <div class="container">
             <h2>Our Menu</h2>
 
             <div class="menu-grid">
@@ -153,7 +155,8 @@
 
                 </div>
             </div>
-    </div>
+        </div>
+
 
     </section>
     <!-- Kichik taomlar -->
@@ -235,47 +238,216 @@
             </div>
         </div>
     </section>
-
-
-    <section id="about" class="about">
-
+    <section class="section2">
         <div class="container">
+            <h1 class="mells-h1">Most Popular Dishes</h1>
+            <div class="mells">
 
+                <img class="mells-img" src="./img/juicy-grilled-ribeye-steak-with-herb-butter.png" alt="">
+                <div class="mells2">
+                    <h1>TODAY'S SPECIAL DISCOUNTS !</h1>
+                    <h3>Chef's Special Steak </h3>
+                    <h2>- 30% OFF</h2>
+                    <button class="order-btn"> Order Now</button>
+                </div>
 
-            <h2>About Us</h2>
-            <p>
-                We serve delicious food made with fresh ingredients.
-                Our restaurant is famous for quality and taste.
-                We also offer online ordering and fast delivery, so you can enjoy our meals at home.
-            </p>
+            </div>
+            <div class="mel">
+                <div class="mel2">
+                    <h1>TODAY'S SPECIAL DISCOUNTS !</h1>
+                    <h3>Special Burger</h3>
+                    <h2>-35 % OFF</h2>
+                    <button class="order-btn"> Order Now</button>
+                </div>
+                <img class="mel-img"
+                    src="./img/Default_burger_cinematic_and_of_different_types_flying_burger_1-removebg-preview 1.png"
+                    alt="">
+            </div>
         </div>
+
+
     </section>
-
-
-    <section id="contact" class="contact">
+    <section id="All menu" class="menu2-food">
         <div class="container">
-            <div class="contact2">
-                <h2>Contact</h2>
-                <p>Phone: +998 77 444 55 08</p>
-                <p>Email: contact@foodies.com</p>
-                <p>Address: New York City</p>
-                <p>Follow us on:
-                    <a href="#">Instagram</a> |
-                    <a href="#">Facebook</a> |
-                    <a href="#">Telegram</a>
-                </p>
+            <h1 class="menu-h1">All Dishes</h1>
+
+            <div class="menu-box">
+                <div class="foods-menu">
+                    <h2>Taomlar</h2>
+                    <p onclick="showDetails('Osh (Palov)', 'img/osh1.jpg', '50 000 som')">Osh (Palov)</p>
+                    <p onclick="showDetails('Qozon kabob', 'images/qozon_kabob.jpg', '60 000 som')">Qozon kabob</p>
+                    <p onclick="showDetails('Shurva', 'images/shurva.jpg', '35 000 som')">Shurva</p>
+                    <p onclick="showDetails('Norin', 'images/norin.jpg', '45 000 som')">Norin</p>
+                    <p onclick="showDetails('Somsa', 'images/somsa.jpg', '10 000 som')">Somsa</p>
+                    <p onclick="showDetails('Steyk', 'images/steyk.jpg', '85 000 som')">Steyk</p>
+                </div>
+                <div class="foods-menu">
+                    <h2>Fast Food</h2>
+                    <p onclick="showDetails('Gamburger', 'images/burger.jpg', '25 000 som')">Gamburger</p>
+                    <p onclick="showDetails('Chizburger', 'images/chizburger.jpg', '28 000 som')">Chizburger</p>
+                    <p onclick="showDetails('Lavash', 'images/lavash.jpg', '30 000 som')">Lavash</p>
+                    <p onclick="showDetails('Hot-dog', 'images/hot_dog.jpg', '15 000 som')">Hot-dog</p>
+                    <p onclick="showDetails('Donar kebab', 'images/donar.jpg', '32 000 som')">Donar kebab</p>
+                    <p onclick="showDetails('Fri kartoshka', 'images/fri.jpg', '12 000 som')">Fri kartoshka</p>
+                    <p onclick="showDetails('Naggets', 'images/naggets.jpg', '20 000 som')">Naggets</p>
+                </div>
+                <div class="foods-menu">
+                    <h2>Yevropa taomlari</h2>
+                    <p onclick="showDetails('Pizza Margarita', 'images/margarita.jpg', '65 000 som')">Pizza Margarita
+                    </p>
+                    <p onclick="showDetails('Pizza Pepperoni', 'images/pepperoni.jpg', '75 000 som')">Pizza Pepperoni
+                    </p>
+                    <p onclick="showDetails('Spagetti Bolonyeze', 'images/spagetti.jpg', '40 000 som')">Spagetti
+                        Bolonyeze</p>
+                    <p onclick="showDetails('Fettuccine Alfredo', 'images/alfredo.jpg', '45 000 som')">Fettuccine
+                        Alfredo</p>
+                    <p onclick="showDetails('Lasanya', 'images/lasanya.jpg', '50 000 som')">Lasanya</p>
+                    <p onclick="showDetails('Steak', 'images/steak_euro.jpg', '90 000 som')">Steak</p>
+                    <p onclick="showDetails('Grilda pishirilgan baliq', 'images/baliq.jpg', '80 000 som')">Grilda
+                        pishirilgan baliq</p>
+                </div>
+                <div class="foods-menu">
+                    <h2>Sharq taomlari</h2>
+                    <p onclick="showDetails('Sushi', 'images/sushi.jpg', '95 000 som')">Sushi</p>
+                    <p onclick="showDetails('Ramen', 'images/ramen.jpg', '45 000 som')">Ramen</p>
+                    <p onclick="showDetails('Teriyaki tovuq', 'images/teriyaki.jpg', '40 000 som')">Teriyaki tovuq</p>
+                    <p onclick="showDetails('Udon', 'images/udon.jpg', '38 000 som')">Udon</p>
+                    <p onclick="showDetails('Wok noodle', 'images/wok.jpg', '35 000 som')">Wok noodle</p>
+                </div>
+                <div class="foods-menu">
+                    <h2>Shirinliklar</h2>
+                    <p onclick="showDetails('Cheesecake', 'images/cheesecake.jpg', '25 000 som')">Cheesecake</p>
+                    <p onclick="showDetails('Tiramisu', 'images/tiramisu.jpg', '28 000 som')">Tiramisu</p>
+                    <p onclick="showDetails('Medovik', 'images/medovik.jpg', '20 000 som')">Medovik</p>
+                    <p onclick="showDetails('Napoleon torti', 'images/napoleon.jpg', '22 000 som')">Napoleon torti</p>
+                    <p onclick="showDetails('Shokoladli tort', 'images/shokoladli.jpg', '25 000 som')">Shokoladli tort
+                    </p>
+                    <p onclick="showDetails('Muzqaymoq', 'images/muzqaymoq.jpg', '12 000 som')">Muzqaymoq</p>
+                    <p onclick="showDetails('Vafli', 'images/vafli.jpg', '18 000 som')">Vafli</p>
+                </div>
+                <div class="foods-menu">
+                    <h2>Ichimliklar</h2>
+                    <p onclick="showDetails('Espresso', 'images/espresso.jpg', '12 000 som')">Espresso</p>
+                    <p onclick="showDetails('Americano', 'images/americano.jpg', '14 000 som')">Americano</p>
+                    <p onclick="showDetails('Cappuccino', 'images/cappuccino.jpg', '18 000 som')">Cappuccino</p>
+                    <p onclick="showDetails('Latte', 'images/latte.jpg', '20 000 som')">Lakte
+                    </p>
+                    <p onclick="showDetails('Mojito', 'images/mojito.jpg', '22 000 som')">Mojito</p>
+                    <p onclick="showDetails('Limonad', 'images/limonad.jpg', '18 000 som')">Limonad</p>
+                    <p onclick="showDetails('Apelsin sharbati', 'images/apelsin.jpg', '15 000 som')">Apelsin sharbati
+                    </p>
+                    <p onclick="showDetails('Olma sharbati', 'images/olma.jpg', '15 000 som')">Olma sharbati</p>
+                    <p onclick="showDetails('Mineral suv', 'images/suv.jpg', '5 000 som')">Mineral suv</p>
+                </div>
+            </div>
+        </div>
+
+
+        <div id="foodDetailsPopup" class="popup-overlay" onclick="closeDetails()">
+            <div class="popup-card-50" onclick="event.stopPropagation()">
+                <div class="popup-top-nav">
+                    <button class="popup-back-btn" onclick="closeDetails()">&larr; Ortga qaytish</button>
+                </div>
+                <div class="popup-scroll-body">
+                    <img id="popImg" src="" alt="Taom" class="pop-food-image">
+                    <h1 id="popTitle" class="pop-food-title">Taom nomi</h1>
+                    <p id="popPrice" class="pop-food-price">$0</p>
+                    <p id="popDesc" class="pop-food-desc">Batafsil ma'lumot...</p>
+                </div>
             </div>
         </div>
     </section>
 
+    <!-- BOOK A TABLE SECTION -->
+    <div class="container">
+        <section class="booking-section">
+            <div class="container">
+                <div class="booking-card">
+                    <h2 class="booking-title">BOOK A TABLE for</h2>
 
-    <footer>
+                    <form id="restaurantBookingForm" class="booking-form">
+                        <!-- 1-qator: Ism va Telefon -->
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="clientName">Ismingiz:</label>
+                                <input type="text" id="clientName" placeholder="Ismingizni kiriting" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="clientPhone">Telefon raqamingiz:</label>
+                                <input type="tel" id="clientPhone" placeholder="+998" required>
+                            </div>
+                        </div>
 
-        <div class="container">
-            <p>© 2026 Restaurant Website</p>
-        </div>
-    </footer>
-    <script src="script.js"></script>
+                        <!-- 2-qator: Mehmonlar soni va Vaqt -->
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="guestCount">Mehmonlar soni:</label>
+                                <select id="guestCount" required>
+                                    <option value="1 kishi">1 kishi</option>
+                                    <option value="2 kishi" selected>2 kishi</option>
+                                    <option value="3 kishi">3 kishi</option>
+                                    <option value="4 kishi">4 kishi</option>
+                                    <option value="5+ kishi">5+ kishi</option>
+                                    <option value="10 kishi"> 10 kishi</option>
+                                </select>
+                            </div>
+                            <div class="form-group">
+                                <label for="bookingDateTime">Sana va Vaqt:</label>
+                                <input type="datetime-local" id="bookingDateTime" value="2026-06-05T19:00" required>
+                            </div>
+                        </div>
+
+                        <button type="submit" class="book-now-btn">Book Now</button>
+                    </form>
+                    <div id="successMessage" class="success-message"></div>
+                </div>
+            </div>
+        </section>
+
+
+        <section id="about" class="about">
+
+            <div class="container">
+
+
+                <h2>About Us</h2>
+                <p>
+                    We serve delicious food made with fresh ingredients.
+                    Our restaurant is famous for quality and taste.
+                    We also offer online ordering and fast delivery, so you can enjoy our meals at home.
+                </p>
+            </div>
+        </section>
+
+
+        <section id="contact" class="contact">
+            <div class="container">
+                <div class="contact2">
+                    <h2>Contact</h2>
+                    <p class="contact2-p">For the Order <a href="tel:+998774445508" class="phone-link">+998 77 444 55
+                            08</a>
+                        <a href="tel:+998900070000" class="phone-link">+998 90 007 00 00</a>
+                    </p>
+                    <p>Email: contact@foodies.com</p>
+                    <p>Address: New York City</p>
+                    <p>Follow us on:
+                        <a href="#">Instagram</a> |
+                        <a href="#">Facebook</a> |
+                        <a href="#">Telegram</a>
+                    </p>
+                </div>
+            </div>
+        </section>
+
+
+
+        <footer>
+
+            <div class="container">
+                <p>© 2026 Restaurant Website</p>
+            </div>
+        </footer>
+        <script src="script.js"></script>
 
 </body>
 
