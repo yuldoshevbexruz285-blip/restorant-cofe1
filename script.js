@@ -1,27 +1,101 @@
-const foodCards = document.querySelectorAll(".food-card");
 
-foodCards.forEach(card => {
-    card.addEventListener("click", (e) => {
-        const popup = card.querySelector(".food-variants-popup");
-
-        // 1. Sahifadagi BARCHA popup oynalarni darhol yopib chiqamiz
-        document.querySelectorAll(".food-variants-popup").forEach(p => {
-            if (p !== popup) {
-                p.style.display = "none";
-            }
-        });
-
-        // 2. Faqat biz bosgan kartaning ichidagi popupni tekshiramiz:
-        // Agar ochiq bo'lsa yopadi, yopiq bo'lsa ochadi
-        if (popup.style.display === "block") {
+const pizzaPopup = document.getElementById("pizza-popup");
+const burgerPopup = document.getElementById("burger-popup");
+const pastaPopup = document.getElementById("pasta-popup");
+const saladPopup = document.getElementById("salad-popup");
+const soupPopup = document.getElementById("soup-popup");
+const dessertPopup = document.getElementById("dessert-popup");
+function barchasiniYopish(joriyOyna) {
+    const hammasi = [pizzaPopup, burgerPopup, pastaPopup, saladPopup, soupPopup, dessertPopup];
+    hammasi.forEach(popup => {
+        // Agar oyna saytda bo'lsa va u hozir bosilgan oyna bo'lmasa - yopamiz
+        if (popup && popup !== joriyOyna) {
             popup.style.display = "none";
-        } else {
-            popup.style.display = "block";
         }
-
-        // Karta klik bo'lganda hodisa yuqoriga tarqalib ketmasligi uchun
-        e.stopPropagation();
     });
+}
+
+// 3. PIZZA kartasi bosilganda faqat o'zini ochish
+if (pizzaPopup) {
+    const pizzaCard = pizzaPopup.closest('.food-card');
+    if (pizzaCard) {
+        pizzaCard.addEventListener("click", function(e) {
+            if (e.target.closest('.food-variants-popup')) return; // popup ichi bosilsa yopilmasin
+            barchasiniYopish(pizzaPopup); // pizzadan boshqasini yopadi
+            pizzaPopup.style.display = (pizzaPopup.style.display === "block") ? "none" : "block";
+            e.stopPropagation();
+        });
+    }
+}
+
+// 4. BURGER kartasi bosilganda faqat o'zini ochish
+if (burgerPopup) {
+    const burgerCard = burgerPopup.closest('.food-card');
+    if (burgerCard) {
+        burgerCard.addEventListener("click", function(e) {
+            if (e.target.closest('.food-variants-popup')) return;
+            barchasiniYopish(burgerPopup); // burgerdan boshqasini yopadi
+            burgerPopup.style.display = (burgerPopup.style.display === "block") ? "none" : "block";
+            e.stopPropagation();
+        });
+    }
+}
+
+// 5. PASTA kartasi bosilganda faqat o'zini ochish
+if (pastaPopup) {
+    const pastaCard = pastaPopup.closest('.food-card');
+    if (pastaCard) {
+        pastaCard.addEventListener("click", function(e) {
+            if (e.target.closest('.food-variants-popup')) return;
+            barchasiniYopish(pastaPopup); // pastadan boshqasini yopadi
+            pastaPopup.style.display = (pastaPopup.style.display === "block") ? "none" : "block";
+            e.stopPropagation();
+        });
+    }
+}
+
+// 6. SALAD kartasi bosilganda faqat o'zini ochish
+if (saladPopup) {
+    const saladCard = saladPopup.closest('.food-card');
+    if (saladCard) {
+        saladCard.addEventListener("click", function(e) {
+            if (e.target.closest('.food-variants-popup')) return;
+            barchasiniYopish(saladPopup);
+            saladPopup.style.display = (saladPopup.style.display === "block") ? "none" : "block";
+            e.stopPropagation();
+        });
+    }
+}
+
+// 7. SOUP kartasi bosilganda faqat o'zini ochish
+if (soupPopup) {
+    const soupCard = soupPopup.closest('.food-card');
+    if (soupCard) {
+        soupCard.addEventListener("click", function(e) {
+            if (e.target.closest('.food-variants-popup')) return;
+            barchasiniYopish(soupPopup);
+            soupPopup.style.display = (soupPopup.style.display === "block") ? "none" : "block";
+            e.stopPropagation();
+        });
+    }
+}
+
+// 8. DESSERT kartasi bosilganda faqat o'zini ochish
+if (dessertPopup) {
+    const dessertCard = dessertPopup.closest('.food-card');
+    if (dessertCard) {
+        dessertCard.addEventListener("click", function(e) {
+            if (e.target.closest('.food-variants-popup')) return;
+            barchasiniYopish(dessertPopup);
+            dessertPopup.style.display = (dessertPopup.style.display === "block") ? "none" : "block";
+            e.stopPropagation();
+        });
+    }
+}
+
+// 9. Saytning istalgan bo'sh joyi bosilganda hamma oyna yopilib ketishi uchun
+document.addEventListener("click", function() {
+    barchasiniYopish(null);
 });
 
 
