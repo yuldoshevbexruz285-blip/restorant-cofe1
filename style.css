@@ -104,10 +104,8 @@ body {
     border: transparent;
     border-radius: 8px;
 }
-.hero button:active{
-   
-}
-.hero button:focus{
+
+.hero button:focus {
     outline: none;
     background-color: #e02424 !important;
 }
@@ -686,6 +684,11 @@ footer {
     background-color: hsl(0, 6%, 27%);
 }
 
+.mells2 button:focus {
+    outline: none;
+    background-color: #e02424 !important;
+}
+
 .mel {
     display: flex;
     justify-content: space-around;
@@ -728,6 +731,11 @@ footer {
 
 .mel2 button:hover {
     background-color: hsl(0, 0%, 22%);
+}
+
+.mel2 button:focus {
+    outline: none;
+    background-color: #e02424 !important;
 }
 
 .mel-img {
@@ -1412,13 +1420,15 @@ footer {
         padding: 15px 0;
         text-align: center;
     }
-      .foods-menu h2 {
-       color: #ff4757;
+
+    .foods-menu h2 {
+        color: #ff4757;
         margin: 15px 1px;
         font-size: 22px;
-    
+
     }
-    .menu-box{
+
+    .menu-box {
         height: auto;
     }
 
@@ -1485,7 +1495,7 @@ footer {
         height: 35px;
         font-size: 10px;
     }
-    
+
 
     .menu h2,
     .menu2 h2,
@@ -1539,10 +1549,10 @@ footer {
     }
 
     .foods-menu h2 {
-       color: #ff4757;
+        color: #ff4757;
         margin: 15px 10px;
         font-size: 18px;
-    
+
     }
 
     .foods-menu p {
@@ -1699,9 +1709,8 @@ footer {
         transition: all 0.4 ease-in-out !important;
         background-color: red;
     }
-    .hero button:hover{
-   
-    }
+
+    .hero button:hover {}
 
     .menu h2,
     .menu2 h2 {
