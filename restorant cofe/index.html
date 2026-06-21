@@ -1,0 +1,454 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Restaurant Website</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <header class="header">
+        <div class="container">
+        <div class="header1">
+            <h1 class="logo">Foodies</h1>
+
+            <nav>
+                <ul class="nav">
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#menu">Menu</a></li>
+                    <li><a href="#All menu"> All menu</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+        </div>
+    </header>
+
+
+    <section id="home" class="hero">
+
+        <h2>Welcome To Our Restaurant</h2>
+        <p>Best food in your city</p>
+        <button class="order-btn">Order Now</button>
+
+
+    </section>
+
+
+    <section id="menu" class="menu">
+        <div class="container">
+            <h2>Our Menu</h2>
+
+            <div class="menu-grid">
+
+                <div class="food-card" >
+                    <img style="height: 210px;" src="./img/Без названия (4).jpg" alt="">
+                    <h3>Pizza</h3>
+                    <p>$10</p>
+                    <p class="food-desc">Classic Italian pizza with fresh mozzarella.</p>
+
+                    <!-- Pizza turlari popup -->
+                    <div id="pizza-popup" class="food-variants-popup">
+                        <h4>Pizza Variants</h4>
+
+                        <div class="variant">
+                            <div class="variant-img">
+                            </div>
+                            <p>Pepperoni - Mozzarella, Pepperoni</p>
+                        </div>
+
+                        <div class="variant">
+                            <div class="variant-img2"></div>
+                            <p>Quziqorinli - Mozzarella, Mushrooms, Tomato</p>
+                        </div>
+
+                        <div class="variant">
+                            <div class="variant-img3"></div>
+                            <p>Tovuq go‘shtli - Mozzarella, Chicken, Tomato</p>
+                        </div>
+
+                        <div class="variant">
+                            <div class="variant-img4"></div>
+                            <p>Mol go‘shtli - Mozzarella, Beef, Onion</p>
+                        </div>
+
+                        <div class="variant">
+                            <div class="variant-img5"></div>
+                            <p>Big Pizza - Mozzarella, Pepperoni, Chicken, Mushrooms</p>
+                        </div>
+
+                        <p style="margin-top:10px; font-weight:bold; color:#333;">O‘zingiz tanlang!</p>
+                    </div>
+                </div>
+                <div class="food-card">
+                    <img style="height: 210px ; background-size: cover;" src="./img/Без названия (2).jpg" alt="">
+                    <h3>Burger</h3>
+                    <p>$8</p>
+                    <p class="food-desc">Juicy beef burger with cheddar and lettuce.</p>
+
+                    <!-- Burger turlari -->
+                    <div id="burger-popup" class="food-variants-popup">
+
+                        <h4>Burger Variants</h4>
+
+                        <div class="variant">
+                            <div class="variant-img6"></div>
+                            <p>Cheese Burger - Beef, Cheese, Lettuce</p>
+                        </div>
+
+                        <div class="variant">
+                            <div class="variant-img7"></div>
+                            <p>Chicken Burger - Chicken, Lettuce, Sauce</p>
+                        </div>
+
+                        <div class="variant">
+                            <div class="variant-img8"></div>
+                            <p>Beef Burger - Beef, Onion, Cheese</p>
+                        </div>
+
+                        <div class="variant">
+                            <div class="variant-img9"></div>
+                            <p>Big Burger - Double Beef, Cheese, Sauce</p>
+                        </div>
+
+                        <p style="margin-top:10px;font-weight:bold;">O‘zingiz tanlang!</p>
+
+                    </div>
+
+                </div>
+                <div class="food-card">
+                    <img style="height: 220px;" src="./img/Без названия (3).jpg" alt="">
+                    <h3>Pasta</h3>
+                    <p>$12</p>
+                    <p class="food-desc">Creamy pasta with parmesan and herbs.</p>
+
+                    <!-- Pasta turlari -->
+                    <div id="pasta-popup" class="food-variants-popup">
+
+                        <h4>Pasta Variants</h4>
+
+                        <div class="variant">
+                            <div class="variant-img10"></div>
+                            <p>Carbonara - Pasta, Egg, Parmesan, Bacon</p>
+                        </div>
+
+                        <div class="variant">
+                            <div class="variant-img11"></div>
+                            <p>Alfredo - Pasta, Cream, Parmesan, Butter</p>
+                        </div>
+
+                        <div class="variant">
+                            <div class="variant-img12"></div>
+                            <p>Pesto - Pasta, Basil, Olive Oil, Parmesan</p>
+                        </div>
+
+                        <div class="variant">
+                            <div class="variant-img13"></div>
+                            <p>Seafood Pasta - Pasta, Shrimp, Garlic, Tomato</p>
+                        </div>
+
+                        <p style="margin-top:10px;font-weight:bold;">O‘zingiz tanlang!</p>
+
+                    </div>
+
+                </div>
+            </div>
+        </div>
+
+
+    </section>
+    <!-- Kichik taomlar -->
+    <section id="more-menu" class="menu2">
+        <div class="container">
+            <h2>Other Dishes</h2>
+            <div class="menu-grid">
+
+                <div class="food-card">
+                    <img style="width: 320px;" src="./img/salad1.jpg" alt="Salad">
+                    <h3>Salad</h3>
+                    <p>$5</p>
+                    <p class="food-desc">Fresh green salad with olive oil dressing.</p>
+                    <div id="salad-popup" class="food-variants-popup">
+                        <h4>Salad Variants</h4>
+                        <div class="variant">
+                            <div class="variant-img14"></div>
+                            <p>Caesar Salad</p>
+                        </div>
+                        <div class="variant">
+                            <div class="variant-img15"></div>
+                            <p>Greek Salad</p>
+                        </div>
+                        <div class="variant">
+                            <div class="variant-img16"></div>
+                            <p>Chicken-salad</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="food-card">
+                    <img style="width: 320px;" src="./img/soup1.jpg" alt="Soup">
+                    <h3>Soup</h3>
+                    <p>$6</p>
+                    <p class="food-desc">Warm tomato soup with herbs.</p>
+                    <div id="soup-popup" class="food-variants-popup">
+                        <h4>Soup Variants</h4>
+                        <div class="variant">
+                            <div class="variant-img17"></div>
+                            <p>Mushroom Soup</p>
+                        </div>
+                        <div class="variant">
+                            <div class="variant-img18"></div>
+                            <p>Chicken Soup</p>
+                        </div>
+                        <div class="variant">
+                            <div class="variant-img19"></div>
+                            <p>Meat soup</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="food-card">
+                    <img style="width: 320px;" src="./img/dessert1.jpg" alt="Dessert">
+                    <h3>Dessert</h3>
+                    <p>$4</p>
+                    <p class="food-desc">Sweet chocolate mousse.</p>
+                    <div id="dessert-popup" class="food-variants-popup">
+                        <h4>Dessert Variants</h4>
+                        <div class="variant">
+                            <div class="variant-img20"></div>
+                            <p>Cheesecake</p>
+                        </div>
+                        <div class="variant">
+                            <div class="variant-img21"></div>
+                            <p>Ice Cream</p>
+                        </div>
+                        <div class="variant">
+                            <div class="variant-img22"></div>
+                            <p>Perojni</p>
+                        </div>
+                        <div class="variant">
+                            <div class="variant-img23"></div>
+                            <p>Chocolote</p>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+    <section class="section2">
+        <div class="container">
+            <h1 class="mells-h1">Most Popular Dishes</h1>
+            <div class="mells">
+
+                <img class="mells-img" src="./img/juicy-grilled-ribeye-steak-with-herb-butter.png" alt="">
+                <div class="mells2">
+                    <h1>TODAY'S SPECIAL DISCOUNTS !</h1>
+                    <h3>Chef's Special Steak </h3>
+                    <h2>- 30% OFF</h2>
+                    <button class="order-btn"> Order Now</button>
+                </div>
+
+            </div>
+            <div class="mel">
+                <div class="mel2">
+                    <h1>TODAY'S SPECIAL DISCOUNTS !</h1>
+                    <h3>Special Burger</h3>
+                    <h2>-35 % OFF</h2>
+                    <button class="order-btn"> Order Now</button>
+                </div>
+                <img class="mel-img"
+                    src="./img/Default_burger_cinematic_and_of_different_types_flying_burger_1-removebg-preview 1.png"
+                    alt="">
+            </div>
+        </div>
+
+
+    </section>
+    <section id="All menu" class="menu2-food">
+        <div class="container">
+            <h1 class="menu-h1">All Dishes</h1>
+
+            <div class="menu-box">
+                <div class="foods-menu">
+                    <h2>Taomlar</h2>
+                    <p onclick="showDetails('Osh (Palov)', 'img/osh1.jpg', '50 000 som')">Osh (Palov)</p>
+                    <p onclick="showDetails('Qozon kabob', 'img/qozon kabob.jpg', '60 000 som')">Qozon kabob</p>
+                    <p onclick="showDetails('Shurva', 'img/shurva.jpg', '35 000 som')">Shurva</p>
+                    <p onclick="showDetails('Norin', 'img/norin.jpg', '45 000 som')">Norin</p>
+                    <p onclick="showDetails('Somsa', 'img/somsa.jpg', '10 000 som')">Somsa</p>
+                    <p onclick="showDetails('Steyk', 'img/steyk.jpg', '85 000 som')">Steyk</p>
+                </div>
+                <div class="foods-menu">
+                    <h2>Fast Food</h2>
+                    <p onclick="showDetails('Gamburger', 'img/burger.jpg', '25 000 som')">Gamburger</p>
+                    <p onclick="showDetails('Chizburger', 'img/chizburger.jpg', '28 000 som')">Chizburger</p>
+                    <p onclick="showDetails('Lavash', 'img/lavash.jpg', '30 000 som')">Lavash</p>
+                    <p onclick="showDetails('Donar kebab', 'img/donar.jpg', '32 000 som')">Donar kebab</p>
+                    <p onclick="showDetails('Fri kartoshka', 'img/fri.jpg', '12 000 som')">Fri kartoshka</p>
+                    <p onclick="showDetails('Naggets', 'img/negets.jpg', '20 000 som')">Naggets</p>
+                </div>
+                <div class="foods-menu">
+                    <h2>Yevropa taomlari</h2>
+                    <p onclick="showDetails('Pizza Margarita', 'img/margarita.jpg', '65 000 som')">Pizza Margarita
+                    </p>
+                    <p onclick="showDetails('Pizza Pepperoni', 'img/pepreoni.jpg', '75 000 som')">Pizza Pepperoni
+                    </p>
+                    <p onclick="showDetails('Spagetti Bolonyeze', 'img/pasta.jpg', '40 000 som')">Spagetti
+                        Bolonyeze</p>
+                    <p onclick="showDetails('Fettuccine Alfredo', 'img/alfredo.jpg', '45 000 som')">Fettuccine
+                        Alfredo</p>
+                    <p onclick="showDetails('Lasanya', 'img/lasanya.jpg', '50 000 som')">Lasanya</p>
+                    <p onclick="showDetails('Steak', 'img/steak_euro.jpg', '90 000 som')">Steak</p>
+                    <p onclick="showDetails('Grilda pishirilgan baliq', 'img/baliq.jpg', '80 000 som')">Grilda
+                        pishirilgan baliq</p>
+                </div>
+                <div class="foods-menu">
+                    <h2>Sharq taomlari</h2>
+                    <p onclick="showDetails('Sushi', 'img/sushi.jpg', '95 000 som')">Sushi</p>
+                    <p onclick="showDetails('Teriyaki tovuq', 'img/teriyaki.jpg', '40 000 som')">Teriyaki tovuq</p>
+                    <p onclick="showDetails('Udon', 'img/udon.jpg', '38 000 som')">Udon</p>
+                    <p onclick="showDetails('Wok noodle', 'img/wok.jpg', '35 000 som')">Wok noodle</p>
+                </div>
+                <div class="foods-menu">
+                    <h2>Shirinliklar</h2>
+                    <p onclick="showDetails('Cheesecake', 'img/cheesecake.jpg', '25 000 som')">Cheesecake</p>
+                    <p onclick="showDetails('Tiramisu', 'img/tiramisu.jpg', '28 000 som')">Tiramisu</p>
+                    <p onclick="showDetails('Medovik', 'img/medovik.jpg', '20 000 som')">Medovik</p>
+                    <p onclick="showDetails('Napoleon torti', 'img/napoleon.jpg', '22 000 som')">Napoleon torti</p>
+                    <p onclick="showDetails('Shokoladli tort', 'img/shokoladli.jpg', '25 000 som')">Shokoladli tort
+                    </p>
+                    <p onclick="showDetails('Muzqaymoq', 'img/muzqaymoq.jpg', '12 000 som')">Muzqaymoq</p>
+                    <p onclick="showDetails('Vafli', 'img/vafli.jpg', '18 000 som')">Vafli</p>
+                </div>
+                <div class="foods-menu">
+                    <h2>Ichimliklar</h2>
+                    <p onclick="showDetails('Espresso', 'img/espresso.jpg', '12 000 som')">Espresso</p>
+                    <p onclick="showDetails('Americano', 'img/americano.jpg', '14 000 som')">Americano</p>
+                    <p onclick="showDetails('Cappuccino', 'img/cappuccino.jpg', '18 000 som')">Cappuccino</p>
+                    <p onclick="showDetails('Latte', 'img/latte.jpg', '20 000 som')">Lakte
+                    </p>
+                    <p onclick="showDetails('Mojito', 'img/mojito.jpg', '22 000 som')">Mojito</p>
+                    <p onclick="showDetails('Limonad', 'img/limonad.jpg', '18 000 som')">Limonad</p>
+                    <p onclick="showDetails('Apelsin sharbati', 'img/apelsin.jpg', '15 000 som')">Apelsin sharbati
+                    </p>
+                    <p onclick="showDetails('Olma sharbati', 'img/olma.jpg', '15 000 som')">Olma sharbati</p>
+                    <p onclick="showDetails('Mineral suv', 'img/suv.jpg', '5 000 som')">Mineral suv</p>
+                </div>
+            </div>
+        </div>
+
+
+        <div id="foodDetailsPopup" class="popup-overlay" onclick="closeDetails()">
+            <div class="popup-card-50" onclick="event.stopPropagation()">
+                <div class="popup-top-nav">
+                    <button class="popup-back-btn" onclick="closeDetails()">&larr; Ortga qaytish</button>
+                </div>
+                <div class="popup-scroll-body">
+                    <img id="popImg" src="" alt="Taom" class="pop-food-image">
+                    <h1 id="popTitle" class="pop-food-title">Taom nomi</h1>
+                    <p id="popPrice" class="pop-food-price">$0</p>
+                    <p id="popDesc" class="pop-food-desc">Batafsil ma'lumot...</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- BOOK A TABLE SECTION -->
+    <div class="container">
+        <section class="booking-section">
+            <div class="container">
+                <div class="booking-card">
+                    <h2 class="booking-title">BOOK A TABLE for</h2>
+
+                    <form id="restaurantBookingForm" class="booking-form">
+                        <!-- 1-qator: Ism va Telefon -->
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="clientName">Ismingiz:</label>
+                                <input type="text" id="clientName" placeholder="Ismingizni kiriting" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="clientPhone">Telefon raqamingiz:</label>
+                                <input type="tel" id="clientPhone" placeholder="+998" required>
+                            </div>
+                        </div>
+
+                        <!-- 2-qator: Mehmonlar soni va Vaqt -->
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="guestCount">Mehmonlar soni:</label>
+                                <select id="guestCount" required>
+                                    <option value="1 kishi">1 kishi</option>
+                                    <option value="2 kishi" selected>2 kishi</option>
+                                    <option value="3 kishi">3 kishi</option>
+                                    <option value="4 kishi">4 kishi</option>
+                                    <option value="5+ kishi">5+ kishi</option>
+                                    <option value="10 kishi"> 10 kishi</option>
+                                </select>
+                            </div>
+                            <div class="form-group">
+                                <label for="bookingDateTime">Sana va Vaqt:</label>
+                                <input type="datetime-local" id="bookingDateTime" value="2026-06-05T19:00" required>
+                            </div>
+                        </div>
+
+                        <button type="submit" class="book-now-btn">Book Now</button>
+                    </form>
+                    <div id="successMessage" class="success-message"></div>
+                </div>
+            </div>
+        </section>
+
+
+        <section id="about" class="about">
+
+            <div class="container">
+
+
+                <h2>About Us</h2>
+                <p>
+                    We serve delicious food made with fresh ingredients.
+                    Our restaurant is famous for quality and taste.
+                    We also offer online ordering and fast delivery, so you can enjoy our meals at home.
+                </p>
+            </div>
+        </section>
+
+
+        <section id="contact" class="contact">
+            <div class="container">
+                <div class="contact2">
+                    <h2>Contact</h2>
+                    <p class="contact2-p">For the Order <a href="tel:+998774445508" class="phone-link">+998 77 444 55
+                            08</a>
+                        <a href="tel:+998900070000" class="phone-link">+998 90 007 00 00</a>
+                    </p>
+                    <p>Email: contact@foodies.com</p>
+                    <p>Address: New York City</p>
+                    <p>Follow us on:
+                        <a href="#">Instagram</a> |
+                        <a href="#">Facebook</a> |
+                        <a href="#">Telegram</a>
+                    </p>
+                </div>
+            </div>
+        </section>
+
+
+
+        <footer>
+
+            <div class="container">
+                <p>© 2026 Restaurant Website</p>
+            </div>
+        </footer>
+        <script src="script.js"></script>
+
+</body>
+
+</html>
