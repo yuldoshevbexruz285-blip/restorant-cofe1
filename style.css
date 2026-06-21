@@ -95,14 +95,21 @@ body {
     background: red;
     color: white;
     cursor: pointer;
-    transition: all 0.9s ease-in-out;
+    transition: all 0.4s ease-in-out;
 }
 
 .hero button:hover {
-    background-color: #222;
+    background-color: #222 !important;
     color: white;
     border: transparent;
     border-radius: 8px;
+}
+.hero button:active{
+   
+}
+.hero button:focus{
+    outline: none;
+    background-color: #e02424 !important;
 }
 
 /* MENU */
@@ -671,12 +678,12 @@ footer {
     border: transparent;
     color: white;
     background-color: #ff4d4d;
-    transition: all 0.6s ease-in-out;
+    transition: all 0.4s ease-in-out;
     font-size: 16px;
 }
 
 .mells2 button:hover {
-    background-color: hsl(0, 1%, 41%);
+    background-color: hsl(0, 6%, 27%);
 }
 
 .mel {
@@ -716,11 +723,11 @@ footer {
     color: white;
     background-color: #ff4d4d;
     font-size: 16px;
-    transition: all 0.6s ease-in-out;
+    transition: all 0.4s ease-in-out;
 }
 
 .mel2 button:hover {
-    background-color: #9e9a9a;
+    background-color: hsl(0, 0%, 22%);
 }
 
 .mel-img {
@@ -1476,8 +1483,9 @@ footer {
     .hero button {
         width: 100px;
         height: 35px;
-        font-size: 12px;
+        font-size: 10px;
     }
+    
 
     .menu h2,
     .menu2 h2,
@@ -1688,6 +1696,11 @@ footer {
         width: 65px !important;
         height: 23px !important;
         font-size: 5px !important;
+        transition: all 0.4 ease-in-out !important;
+        background-color: red;
+    }
+    .hero button:hover{
+   
     }
 
     .menu h2,
