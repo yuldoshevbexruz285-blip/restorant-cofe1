@@ -1405,6 +1405,21 @@ footer {
         padding: 15px 0;
         text-align: center;
     }
+      .foods-menu h2 {
+       color: #ff4757;
+        margin: 15px 1px;
+        font-size: 22px;
+    
+    }
+    .menu-box{
+        height: auto;
+    }
+
+    .foods-menu p {
+        margin-top: 8px;
+
+        font-size: 16px;
+    }
 }
 
 @media (max-width: 480px) {
@@ -1516,14 +1531,16 @@ footer {
     }
 
     .foods-menu h2 {
-        margin: 5px 1px;
-        font-size: 10px;
-        text-align: center;
+       color: #ff4757;
+        margin: 15px 10px;
+        font-size: 18px;
+    
     }
 
     .foods-menu p {
-        text-align: center;
-        font-size: 6px;
+        margin-top: 8px;
+
+        font-size: 13px;
     }
 
     .booking-section {
@@ -1913,7 +1930,7 @@ footer {
     }
 
     .popup-back-btn {
-        font-size: 8px !important;
+        font-size: 10px !important;
         padding: 8px 16px !important;
         border-radius: 30px !important;
         width: 100px !important;
