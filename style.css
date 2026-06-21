@@ -107,7 +107,7 @@ body {
 
 .hero button:focus {
     outline: none;
-    background-color: #e02424 !important;
+    background-color: rgb(245, 65, 65) !important;
 }
 
 /* MENU */
@@ -686,7 +686,7 @@ footer {
 
 .mells2 button:focus {
     outline: none;
-    background-color: #e02424 !important;
+    background-color: rgb(245, 65, 65) !important;
 }
 
 .mel {
@@ -735,7 +735,7 @@ footer {
 
 .mel2 button:focus {
     outline: none;
-    background-color: #e02424 !important;
+    background-color: rgb(245, 65, 65) !important;
 }
 
 .mel-img {
@@ -1491,9 +1491,10 @@ footer {
     }
 
     .hero button {
-        width: 100px;
+        border-radius: 10px;
+        width: 110px;
         height: 35px;
-        font-size: 10px;
+        font-size: 13px;
     }
 
 
